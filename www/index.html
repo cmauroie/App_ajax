@@ -29,7 +29,7 @@
       </ion-header-bar>
       <ion-content>
 
-      
+
         <div ng-controller="studentController">
         <table>
         <tr>
@@ -43,6 +43,14 @@
         <td>{{ student.Percentage }}</td>
         </tr>
         </table>
+        
+        </div>
+
+        <div ng-controller="studentController_profile">
+          <h4>Id Json 2</h4>
+        <a ng-repeat="profile in profiles"> {{ profile.id}} </a>  
+
+
         </div>
    
 <!--    <script>

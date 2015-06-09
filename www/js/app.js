@@ -21,4 +21,10 @@ angular.module('starter', ['ionic'])
                 $http.get(url).success(function(response){
                   $scope.students = response;
                 });
+                
+}).controller('studentController_profile', function($scope, $http){
+                var url = "js/datajson2.json";
+                $http.get(url).success(function(response){
+                  $scope.profiles = response.profile;
+                });
 });
